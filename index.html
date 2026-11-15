@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MUSICK</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="splash">
+  <div class="doodles" aria-hidden="true">♪ ◎ ▶ ♫ ♪ ◎ ▶ ♫ ♪ ◎ ▶ ♫</div>
+  <h1>MUSICK</h1>
+  <button id="enter">Enter</button>
+</section>
+
+<div id="app" hidden>
+  <header>
+    <div class="logo" aria-label="Vincent logo"><b>V</b><small>tnedniv</small></div>
+    <label class="search"><span aria-hidden="true">⌕</span>
+      <input id="q" type="search" placeholder="Search songs or artists" aria-label="Search songs or artists"></label>
+    <nav>
+      <button id="radio" class="ic" aria-pressed="false" aria-label="Radio mode" title="Radio mode"><i></i></button>
+      <button id="hist" class="ic" aria-label="History" title="History">▥</button>
+      <button id="set" class="ic" aria-label="Settings" title="Settings">⚙</button>
+      <button id="help" class="ic" aria-label="Help and about" title="Help and about">?</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="row">
+      <ul id="genres" aria-label="Genres"></ul>
+      <div id="stage">
+        <div class="vinyl"><div id="car"></div></div>
+        <button class="arr l" id="prev" aria-label="Previous song">‹</button>
+        <button class="arr r" id="next" aria-label="Next song">›</button>
+        <div class="np"><span id="npt">Pick a genre</span>
+          <div class="bar"><div id="fill"></div></div></div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div id="artists"></div>
+      <div id="songs"><p class="hint">Click an artist to see their songs.</p></div>
+    </section>
+
+    <section id="contact">
+      <div class="me">
+        <p>Facebook <strong>James *****</strong></p>
+        <p>Contact me in <strong>09*********</strong></p>
+        <p>Chat me in Insta <strong>FRN DENISE</strong></p>
+        <p>Follow me in Spot <strong>VYNCHEL</strong></p>
+        <p class="small">jamesvincentpamintuan@pcb.edu.ph</p>
+      </div>
+      <form id="msg">
+        <label>User name<input id="un" required></label>
+        <label>Message for improvement or constructive criticism<textarea id="tx" rows="5" required></textarea></label>
+        <button>Send</button>
+      </form>
+    </section>
+  </main>
+</div>
+
+<dialog id="dlg"><div id="dbody"></div><button id="close">Close</button></dialog>
+<script src="script.js"></script>
+</body>
+</html>
